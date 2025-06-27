@@ -6,6 +6,24 @@
   <title>문의하기</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 우클릭 방지 소스 script to script -->
+<script>
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('우클릭은 비활성화되어 있습니다.');
+  });
+</script>
+<!-- 실제 이동을 막는 링크 script to script --><script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // a, button 모두 coming-soon 클래스를 가진 요소를 선택
+    document.querySelectorAll('a.coming-soon, button.coming-soon').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault(); // 기본 동작(링크 이동, 버튼 제출 등) 방지
+        alert('준비 중인 페이지입니다.');
+      });
+    });
+  });
+</script>
   <style>
     /* 모바일 메뉴 및 아코디언 토글 관련 기본 스타일 */
     .mobile-dropdown-content { display: none; }
@@ -17,7 +35,7 @@
   <header class="gtb001 fixed w-full bg-white shadow-md z-50">
     <div class="container mx-auto px-4 py-5 flex items-center justify-between">
       <a class="flex items-center" href="#">
-        <img alt="GTB Korea" class="h-10" src="https://static.readdy.ai/image/3bc01cf05bc1d655cd439a7d394c0eb8/0b98485c116e4f4d5eded77d234d0d5f.png" />
+        <img alt="GTB Inc" class="h-10" src="http://gtbkorea.com/board/download/e6edb8a8ae070bb37cf489d80591b949" />
       </a>
       <nav class="hidden lg:flex items-center justify-end space-x-12">
         <a class="text-lg font-medium hover:text-primary transition-colors" href="http://gtbkorea.com">홈</a>
@@ -35,9 +53,9 @@
           <a class="text-lg font-medium hover:text-primary transition-colors flex items-center" href="#">솔루션</a>
           <div class="dropdown absolute hidden group-hover:block bg-white shadow-lg rounded py-3 min-w-[280px]">
             <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/c_001">적용사례</a>
-            <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/c_002">유지보수신청</a>
-            <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/c_003">로봇티칭</a>
-            <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/c_004">데모신청</a>
+            <a class="block px-8 py-3 hover:bg-gray-100 text-base coming-soon" href="#">유지보수신청</a>
+            <a class="block px-8 py-3 hover:bg-gray-100 text-base coming-soon" href="#">로봇티칭</a>
+            <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="https://gtbinc.free.nf/index.php">데모신청</a>
           </div>
         </div>
         <!-- 고객지원 메뉴 -->
@@ -57,7 +75,7 @@
             <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/d_003">CI정책</a>
           </div>
         </div>
-        <a class="text-lg font-medium hover:text-primary transition-colors" href="#">문의하기</a>
+        <a class="text-lg font-medium hover:text-primary transition-colors" href="https://gtbinc.free.nf/index.php">문의하기</a>
       </nav>
 
       <!-- 모바일 메뉴 버튼 -->
@@ -88,9 +106,9 @@
           </div>
           <div class="mobile-dropdown-content pl-4 py-2 space-y-2">
             <a class="block py-1" href="http://gtbkorea.com/page/c_001">적용사례</a>
-            <a class="block py-1" href="http://gtbkorea.com/page/c_002">유지보수신청</a>
-            <a class="block py-1" href="http://gtbkorea.com/page/c_003">로봇티칭</a>
-            <a class="block py-1" href="http://gtbkorea.com/page/c_004">데모신청</a>
+            <a class="block py-1 coming-soon" href="#">유지보수신청</a>
+            <a class="block py-1 coming-soon" href="#">로봇티칭</a>
+            <a class="block py-1" href="https://gtbinc.free.nf/index.php">데모신청</a>
           </div>
         </div>
 
@@ -117,7 +135,7 @@
           </div>
         </div>
 
-        <a class="block py-2 font-medium" href="#">문의하기</a>
+        <a class="block py-2 font-medium" href="https://gtbinc.free.nf/index.php">문의하기</a>
       </div>
     </div>
   </header>
@@ -195,7 +213,66 @@
       </div>
     </div>
   </section>
+<!-- Footer -->
 
+<footer class="py-12" style="background-color: #080b12;">
+<div class="container mx-auto px-4"><!-- 상단 그리드 영역 -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-8 mb-12 text-gray-300"><!-- 로고 및 소개 -->
+<div class="lg:col-span-2"><img alt="GTB Inc." class="h-12 mb-6" src="http://gtbkorea.com/board/download/76a9f95d25dacd808770e22f47030675" />
+<p class="mb-6 text-lg">PLASMA / USC / COBOT / AGV / AMR / OEM</p>
+
+<div class="flex space-x-4">&nbsp;</div>
+</div>
+<!-- 제품 메뉴 -->
+
+<div>
+<h3 class="text-xl font-bold mb-4 text-white">제품</h3>
+
+<ul class="space-y-2">
+	<li><a class="hover:text-blue-400 text-lg" href="http://gtbkorea.com/page/b_001">협동로봇(COBOT)</a></li>
+	<li><a class="hover:text-blue-400 text-lg" href="http://gtbkorea.com/page/b_002">자율운반로봇(AGV&middot;AMR)</a></li>
+	<li><a class="hover:text-blue-400 text-lg" href="http://gtbkorea.com/page/b_003">건식세정(플라즈마&middot;USC)</a></li>
+</ul>
+</div>
+<!-- 서비스 메뉴 -->
+
+<div>
+<h3 class="text-xl font-bold mb-4 text-white">서비스</h3>
+
+<ul class="space-y-2">
+	<li><a class="hover:text-blue-400 text-lg" href="http://gtbkorea.com/page/c_001">적용사례</a></li>
+	<li><a class="hover:text-blue-400 text-lg coming-soon" href="#">로봇티칭</a></li>
+	<li><a class="hover:text-blue-400 text-lg coming-soon" href="#">유지보수신청</a></li>
+	<li><a class="hover:text-blue-400 text-lg coming-soon" href="#">다운로드</a></li>
+	<li><a class="hover:text-blue-400 text-lg" href="https://gtbinc.free.nf/index.php" rel="noopener noreferrer" target="_blank">문의하기</a></li>
+</ul>
+</div>
+<!-- 문의 연락처 -->
+
+<div>
+<h3 class="text-xl font-bold mb-4 text-white">문의</h3>
+
+<ul class="space-y-6">
+	<li class="flex items-center space-x-4">
+	<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center"><img alt="주소 아이콘" class="max-w-full max-h-full object-contain" src="http://gtbkorea.com/board/download/cc67cde967ae12064e1f5ffdda8ddb40" /></div>
+	<span class="text-lg leading-relaxed">경기도 성남시 중원구 갈마치로 302, B동 1504호</span></li>
+	<li class="flex items-center space-x-4">
+	<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center"><img alt="이메일 아이콘" class="max-w-full max-h-full object-contain" src="http://gtbkorea.com/board/download/ab3aaf7b191866ac1a99ce6d7fa5a7cf" /></div>
+	<span class="text-lg leading-relaxed">gtb@gtbkorea.com</span></li>
+</ul>
+</div>
+</div>
+<!-- 하단 저작권 및 메뉴 -->
+
+<div class="pt-8 border-t border-gray-700">
+<div class="flex flex-col md:flex-row justify-between items-center text-white space-y-4 md:space-y-0">
+<p class="text-sm">&copy; 2025 GTB Inc. All rights reserved.</p>
+
+<nav class="flex flex-wrap justify-center md:justify-end space-x-6"><a class="hover:text-blue-400 text-lg whitespace-nowrap coming-soon" href="#">개인정보처리방침</a> <a class="hover:text-blue-400 text-lg whitespace-nowrap coming-soon" href="#">이용약관</a> <a class="hover:text-blue-400 text-lg whitespace-nowrap" href="http://gtbkorea.com/board/download/095392a11ec8425c2af63517acf3f4ad">회사소개서 다운로드</a></nav>
+</div>
+</div>
+</div>
+</footer>
   <!-- JS: 모바일 메뉴 열기/닫기 + 아코디언 -->
   <script>
     document.getElementById('mobileMenuButton').addEventListener('click', () => {
