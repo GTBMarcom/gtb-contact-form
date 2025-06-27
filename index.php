@@ -45,7 +45,7 @@
           <div class="dropdown absolute hidden group-hover:block bg-white shadow-lg rounded py-3 min-w-[280px]">
             <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/b_001">협동로봇 (로봇자동화)</a>
             <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/b_002">AGV·AMR (물류이송자동화)</a>
-            <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/b_003">플라즈마/USC (건식세정기)</a>
+            <a class="block px-8 py-3 hover:bg-gray-100 text-base coming-soon" href="http://gtbkorea.com/page/b_003">플라즈마/USC (건식세정기)</a>
           </div>
         </div>
         <!-- 솔루션 메뉴 -->
@@ -70,9 +70,9 @@
         <div class="relative group">
           <a class="text-lg font-medium hover:text-primary transition-colors flex items-center" href="#">회사소개</a>
           <div class="dropdown absolute hidden group-hover:block bg-white shadow-lg rounded py-3 min-w-[280px]">
-            <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/d_001">인사말</a>
-            <a class="block px-8 py-3 hover:text-gray-700 transition-colors" href="http://gtbkorea.com/page/d_002">품질경영</a>
-            <a class="block px-8 py-3 hover:bg-gray-100 text-base" href="http://gtbkorea.com/page/d_003">CI정책</a>
+            <a class="block px-8 py-3 hover:bg-gray-100 text-base coming-soon" href="#">인사말</a>
+            <a class="block px-8 py-3 hover:text-gray-700 transition-colors coming-soon" href="#">품질경영</a>
+            <a class="block px-8 py-3 hover:bg-gray-100 text-base coming-soon" href="#">CI정책</a>
           </div>
         </div>
         <a class="text-lg font-medium hover:text-primary transition-colors" href="https://gtbinc.free.nf/index.php">문의하기</a>
@@ -95,7 +95,7 @@
           <div class="mobile-dropdown-content pl-4 py-2 space-y-2">
             <a class="block py-1" href="http://gtbkorea.com/page/b_001">협동로봇 (로봇자동화)</a>
             <a class="block py-1" href="http://gtbkorea.com/page/b_002">AGV·AMR (물류자동화)</a>
-            <a class="block py-1" href="http://gtbkorea.com/page/b_003">플라즈마/USC (건식세정기)</a>
+            <a class="block py-1 coming-soon" href="#">플라즈마/USC (건식세정기)</a>
           </div>
         </div>
 
@@ -129,9 +129,9 @@
             <span class="font-medium">회사소개</span><span>▾</span>
           </div>
           <div class="mobile-dropdown-content pl-4 py-2 space-y-2">
-            <a class="block py-1" href="http://gtbkorea.com/page/d_001">인사말</a>
-            <a class="block py-1" href="http://gtbkorea.com/page/d_002">품질경영</a>
-            <a class="block py-1" href="http://gtbkorea.com/page/d_003">CI정책</a>
+            <a class="block py-1 coming-soon" href="#">인사말</a>
+            <a class="block py-1 coming-soon" href="#">품질경영</a>
+            <a class="block py-1 coming-soon" href="#">CI정책</a>
           </div>
         </div>
 
