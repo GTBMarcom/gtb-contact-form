@@ -4,6 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>문의하기</title>
+  <!-- 페이지 내 상단 메뉴 및 하단 메뉴 억제 코드 시작 -->
+<style>
+  /* CMS 시스템 강제 메뉴/푸터 숨김 */
+  header, footer,
+  .navbar, .navbar-header,
+  .navbar.navbar-inverse,
+  .top, .bottom,
+  .gnb, .lnb, .footer, .header,
+  .nav, .main-header, .main-footer {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* 페이지 전체 여백 제거 */
+  body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+</style>
+<!-- 페이지 내 상단 메뉴 및 하단 메뉴 억제 코드 종료 -->
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- 우클릭 방지 소스 script to script -->
